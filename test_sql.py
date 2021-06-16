@@ -33,7 +33,7 @@ def test_create_and_insert(db):
     cur.close()
 
     items = run_query(db, "select name from publisher")
-    assert set (x[0] for x in items) == set(["PHI","Harper","GCP","Atomic Habits","Del Rey","Vintage"]), "Publisher mismatch"
+    assert set (x[0] for x in items) == set(["PHI","Harper","GCP","Avery","Del Rey","Vintage"]), "Publisher mismatch"
 
     items = run_query(db, "select title from books")
     assert set(x[0] for x in items) == set(["The C Programming Language","The Go Programming Language","The UNIX Programming Environment","Cryptonomicon","Deep Work","Atomic Habits","The City and The City","The Great War for Civilisation"]), "Book titles mismatch"
