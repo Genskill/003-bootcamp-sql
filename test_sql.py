@@ -9,6 +9,9 @@ def db():
     if os.path.exists("db.sqlite"):
         os.unlink("db.sqlite")
     f = sqlite3.connect("db.sqlite")
+    c = f.cursor()
+    c.execute("PRAGMA foreign_keys = ON;")
+    c.close()
     return f
 
 def run_query(dbconn, statement):
