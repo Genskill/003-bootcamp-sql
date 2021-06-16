@@ -80,7 +80,7 @@ def test_run_update1(db):
     cur.close()
 
     items = run_query(db, "select name from publisher")
-    assert set (x[0] for x in items) == set(["Prentice Hall","Harper","GCP","Atomic Habits","Del Rey","Vintage"]), "Publisher mismatch"
+    assert set (x[0] for x in items) == set(["Prentice Hall","Harper","GCP","Avery","Del Rey","Vintage"]), "Publisher mismatch"
     
 def test_run_delete(db):
     cur = db.cursor()
