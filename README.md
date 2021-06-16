@@ -57,7 +57,7 @@ The publisher countries are as follows
 | PHI           | India   |
 | Harper        | USA     |
 | GCP           | USA     |
-| Atomic Habits | USA     |
+| Avery         | USA     |
 | Del Rey       | UK      |
 | Vintage       | UK      |
 
